@@ -110,36 +110,141 @@
 
   </main>
 
-  <!-- ─── REST OF THE SITE ─── -->
-  <!-- Note: We keep the sections clean and airy to match the new aesthetic -->
+  <!-- ─── ABOUT & EXPERIENCE ─── -->
+  <section id="about" class="section" style="background-color: var(--bg-alt);">
+    <div class="container">
+      <div class="split-grid" style="align-items: center; gap: 4rem;">
+        
+        <!-- Left: Introduction -->
+        <div class="about-text">
+          <p class="certs-label">Introduction</p>
+          <h2 class="section-title-serif">About Me</h2>
+          <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-muted); margin-bottom: 1.5rem;">
+            I am Dileepa D, a passionate <strong>Data Scientist and AI Engineer</strong> based in Bengaluru, India. I specialize in building intelligent systems, analyzing complex datasets, and developing robust backend architectures.
+          </p>
+          <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-muted);">
+            With a strong foundation in modern machine learning frameworks and software engineering principles, I am driven by the desire to solve real-world problems through data-driven solutions and innovative technology.
+          </p>
+        </div>
+
+        <!-- Right: Experience & Certificate -->
+        <div class="experience-card" style="background: var(--bg-light); padding: 2.5rem; border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.05); border: 1px solid rgba(0,0,0,0.03);">
+          <p class="certs-label">Experience</p>
+          <h3 style="font-family: var(--font-serif); font-size: 1.8rem; margin-bottom: 0.5rem;">Tech Vedhu</h3>
+          <p style="color: var(--accent); font-weight: 600; margin-bottom: 1.5rem;">Data Science Intern &nbsp;•&nbsp; Apr 2026 - Jul 2026</p>
+          
+          <p style="color: var(--text-muted); margin-bottom: 2rem; line-height: 1.6;">
+            Successfully completed a comprehensive Data Science internship at Tech Vedhu. During this period, I engaged in hands-on learning and practical application of data science techniques, demonstrating enthusiasm and a strong commitment to expanding my technical skill set.
+          </p>
+
+          <!-- Internship Certificate Card -->
+          <div class="cert-display-card cert-ai" data-cert="certs/cert-internship.jpeg" data-cert-title="Data Science Internship Certificate" data-cert-org="Tech Vedhu" role="button" tabindex="0" aria-label="View Internship Certificate" style="margin: 0;">
+            <div class="cert-ribbon">✦ ISO Certified</div>
+            <div class="cert-display-icon">💼</div>
+            <div class="cert-display-body">
+              <span class="cert-org">Tech Vedhu</span>
+              <h3 style="font-size: 1.3rem;">Data Science<br>Internship</h3>
+              <p>Official certificate of participation and successful completion.</p>
+            </div>
+            <div class="cert-display-footer">
+              <span class="cert-badge-pill">Experience</span>
+              <span class="cert-badge-pill">Data Science</span>
+              <span class="cert-view-hint">View Certificate ↗</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROJECTS ─── -->
   <section id="projects" class="section light-section">
     <div class="container">
       <h2 class="section-title-serif">Selected Works</h2>
-      <div class="projects-grid">
+      <div class="projects-grid projects-grid-3col">
+
+        <!-- 1 -->
         <div class="project-card">
           <span class="proj-num">01/</span>
-          <h3>Emotion Recognition</h3>
-          <p>Real-time facial emotion recognition using CNN & OpenCV.</p>
-          <a href="#" class="proj-link">View Project →</a>
+          <h3>Real-Time Facial Emotion Recognition</h3>
+          <p>Live facial expression classification using CNN deep learning, OpenCV image processing, and DeepFace integration. Trained and evaluated an end-to-end image classification pipeline.</p>
+          <div class="proj-tags"><span>Python</span><span>TensorFlow</span><span>OpenCV</span><span>CNN</span><span>Keras</span></div>
+          <a href="https://github.com/dileepad2005-byte" target="_blank" class="proj-link">View Project →</a>
         </div>
+
+        <!-- 2 -->
         <div class="project-card">
           <span class="proj-num">02/</span>
-          <h3>RAG Pipeline</h3>
-          <p>Context-aware QA system using LangChain, FAISS, and LLMs.</p>
-          <a href="#" class="proj-link">View Project →</a>
+          <h3>RAG / LangChain AI Pipeline</h3>
+          <p>Retrieval-Augmented Generation pipeline for context-aware responses from external documents using FAISS vector search, Sentence Transformers, and OpenRouter LLMs.</p>
+          <div class="proj-tags"><span>LangChain</span><span>RAG</span><span>FAISS</span><span>LLMs</span><span>Embeddings</span></div>
+          <a href="https://github.com/dileepad2005-byte" target="_blank" class="proj-link">View Project →</a>
         </div>
+
+        <!-- 3 -->
         <div class="project-card">
           <span class="proj-num">03/</span>
-          <h3>Big Data Sentiment</h3>
-          <p>Large-scale social data analysis via Hadoop & Spark.</p>
-          <a href="#" class="proj-link">View Project →</a>
+          <h3>Big Data Social Media Sentiment</h3>
+          <p>Large-scale NLP sentiment analysis of social media data applying TF-IDF & Naive Bayes classification with Hadoop & Apache Spark for distributed processing.</p>
+          <div class="proj-tags"><span>Hadoop</span><span>Spark</span><span>NLP</span><span>TF-IDF</span><span>Naive Bayes</span></div>
+          <a href="https://github.com/dileepad2005-byte" target="_blank" class="proj-link">View Project →</a>
         </div>
+
+        <!-- 4 -->
         <div class="project-card">
           <span class="proj-num">04/</span>
-          <h3>Netflix Analytics</h3>
-          <p>EDA of 8,000+ titles with a content-based recommendation engine.</p>
-          <a href="#" class="proj-link">View Project →</a>
+          <h3>Netflix Movies & TV Shows Analysis</h3>
+          <p>Analyzed 8,000+ Netflix titles to identify content trends and release patterns. Built a content-based recommendation system with rich EDA visualizations.</p>
+          <div class="proj-tags"><span>Python</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>Seaborn</span></div>
+          <a href="https://github.com/dileepad2005-byte" target="_blank" class="proj-link">View Project →</a>
         </div>
+
+        <!-- 5 -->
+        <div class="project-card">
+          <span class="proj-num">05/</span>
+          <h3>CNN Image Classification & Deployment</h3>
+          <p>End-to-end CNN image classification workflow — dataset preparation, model compilation, training, confusion matrix, classification report, and Gradio deployment.</p>
+          <div class="proj-tags"><span>TensorFlow</span><span>Keras</span><span>CNN</span><span>Gradio</span></div>
+          <a href="https://github.com/dileepad2005-byte" target="_blank" class="proj-link">View Project →</a>
+        </div>
+
+        <!-- 6 -->
+        <div class="project-card">
+          <span class="proj-num">06/</span>
+          <h3>EPA Green Vehicle Guide Analysis</h3>
+          <p>EDA of EPA's Green Vehicle Guide dataset to identify fuel efficiency trends, emission benchmarks, and recommend eco-friendly vehicles using data visualizations.</p>
+          <div class="proj-tags"><span>Python</span><span>Pandas</span><span>EDA</span><span>Seaborn</span></div>
+          <a href="https://github.com/dileepad2005-byte" target="_blank" class="proj-link">View Project →</a>
+        </div>
+
+        <!-- 7 -->
+        <div class="project-card">
+          <span class="proj-num">07/</span>
+          <h3>Business Sales Performance Analytics</h3>
+          <p>In-depth analysis of business sales data to uncover performance trends, product insights, and revenue opportunities via interactive EDA dashboards.</p>
+          <div class="proj-tags"><span>Python</span><span>Pandas</span><span>Matplotlib</span><span>Scikit-Learn</span></div>
+          <a href="https://github.com/dileepad2005-byte" target="_blank" class="proj-link">View Project →</a>
+        </div>
+
+        <!-- 8 -->
+        <div class="project-card">
+          <span class="proj-num">08/</span>
+          <h3>Customer Retention & Churn Analysis</h3>
+          <p>Analyzed customer behavior to identify churn patterns, build retention analytics, and create actionable business insights through data visualization.</p>
+          <div class="proj-tags"><span>Python</span><span>Pandas</span><span>Scikit-Learn</span><span>Seaborn</span></div>
+          <a href="https://github.com/dileepad2005-byte" target="_blank" class="proj-link">View Project →</a>
+        </div>
+
+        <!-- 9 -->
+        <div class="project-card">
+          <span class="proj-num">09/</span>
+          <h3>Marketing Funnel & Conversion Analysis</h3>
+          <p>Analyzed marketing funnel data to identify conversion bottlenecks, optimize campaign performance, and surface key business growth insights.</p>
+          <div class="proj-tags"><span>Python</span><span>Pandas</span><span>Matplotlib</span><span>EDA</span></div>
+          <a href="https://github.com/dileepad2005-byte" target="_blank" class="proj-link">View Project →</a>
+        </div>
+
       </div>
     </div>
   </section>
@@ -150,28 +255,221 @@
         <div class="split-col">
           <h2 class="section-title-serif">Expertise</h2>
           <ul class="clean-list">
-            <li><strong>Generative AI:</strong> RAG, LangChain, FAISS</li>
-            <li><strong>Machine Learning:</strong> Scikit-Learn, TensorFlow, CNNs</li>
-            <li><strong>Data Science:</strong> Pandas, NumPy, Hadoop, Spark</li>
-            <li><strong>Backend:</strong> Python, SQL, FastAPI, Flask</li>
+            <li><strong>Programming:</strong> Python, SQL, HTML, CSS, JavaScript</li>
+            <li><strong>Generative AI:</strong> RAG, LangChain, LLMs, FAISS, Prompt Engineering, Semantic Search</li>
+            <li><strong>Machine Learning:</strong> Scikit-Learn, Regression, Classification, KNN, Decision Trees, Naive Bayes, K-Means, PCA, SVD</li>
+            <li><strong>Deep Learning:</strong> TensorFlow, Keras, CNN, Image Classification</li>
+            <li><strong>Computer Vision:</strong> OpenCV, DeepFace, Facial Emotion Recognition</li>
+            <li><strong>NLP:</strong> TF-IDF, Word2Vec, Gensim, Sentiment Analysis</li>
+            <li><strong>Data Science:</strong> Pandas, NumPy, Matplotlib, Seaborn, EDA</li>
+            <li><strong>Big Data:</strong> Apache Hadoop, Apache Spark, Distributed Processing</li>
+            <li><strong>Backend & Deploy:</strong> Flask, FastAPI, Gradio</li>
+            <li><strong>Databases:</strong> MySQL, PostgreSQL, MongoDB</li>
+            <li><strong>Tools:</strong> Git, GitHub, Jupyter, Google Colab, VS Code</li>
           </ul>
         </div>
         <div class="split-col">
-          <h2 class="section-title-serif">Education & Certs</h2>
+          <h2 class="section-title-serif">Education</h2>
           <div class="edu-item">
-            <span class="edu-year">2023 - 2027</span>
-            <h4>B.E. in Computer Science</h4>
-            <p>Don Bosco Institute of Technology (CGPA: 8.2)</p>
+            <span class="edu-year">Aug 2023 – Jun 2027 (Expected)</span>
+            <h4>B.E. in Computer Science &amp; Engineering</h4>
+            <p>Don Bosco Institute of Technology, Bengaluru</p>
+            <p style="margin-top:8px;"><strong>CGPA: 8.2 / 10</strong></p>
           </div>
-          <ul class="clean-list" style="margin-top: 20px;">
-            <li>Intro to Generative AI (SkillUp)</li>
-            <li>Software Engineering Simulation (JPMorgan)</li>
-            <li>BASH & PostgreSQL (Edupyramids)</li>
-          </ul>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- ─── CERTIFICATIONS ─── -->
+  <section id="certifications" class="section certs-section">
+    <div class="container">
+      <div class="certs-header">
+        <div>
+          <p class="certs-label">Credentials & Achievements</p>
+          <h2 class="section-title-serif" style="margin-bottom: 0;">Certifications</h2>
+        </div>
+        <p class="certs-tagline">Continuously learning and getting certified across AI, data, and software engineering.</p>
+      </div>
+
+      <div class="certs-showcase">
+
+        <!-- Cert 1 -->
+        <div class="cert-display-card cert-nptel" data-cert="certs/cert-spm.jpeg" data-cert-title="Software Project Management" data-cert-org="NPTEL · IIT Kharagpur" role="button" tabindex="0" aria-label="View Software Project Management Certificate">
+          <div class="cert-ribbon">✦ NPTEL</div>
+          <div class="cert-display-icon">🎓</div>
+          <div class="cert-display-body">
+            <span class="cert-org">NPTEL · IIT Kharagpur</span>
+            <h3>Software Project<br>Management</h3>
+            <p>Comprehensive project management methodologies, agile practices, and software lifecycle planning.</p>
+            <div class="cert-score" style="margin-top:10px; font-weight:600; color:var(--text-dark); font-size:0.9rem;">
+              Score: <span style="color:var(--accent);">47%</span>
+            </div>
+          </div>
+          <div class="cert-display-footer">
+            <span class="cert-badge-pill">Agile</span>
+            <span class="cert-badge-pill">SDLC</span>
+            <span class="cert-view-hint">Click to view ↗</span>
+          </div>
+        </div>
+
+        <!-- Cert 2 -->
+        <div class="cert-display-card cert-ai" data-cert="certs/cert-isro.jpeg" data-cert-title="Martian Surface, Analogues and Atmosphere" data-cert-org="ISRO · IIRS" role="button" tabindex="0" aria-label="View ISRO Certificate">
+          <div class="cert-ribbon">✦ ISRO</div>
+          <div class="cert-display-icon">🚀</div>
+          <div class="cert-display-body">
+            <span class="cert-org">ISRO · IIRS</span>
+            <h3>Martian Surface, Analogues<br>&amp; Atmosphere</h3>
+            <p>IIRS Outreach Programme workshop covering planetary science, Mars analogues, and atmospheric studies.</p>
+            <div class="cert-score" style="margin-top:10px; font-weight:600; color:var(--text-dark); font-size:0.9rem;">
+              <span style="color:var(--accent);">Participation</span>
+            </div>
+          </div>
+          <div class="cert-display-footer">
+            <span class="cert-badge-pill">Space Science</span>
+            <span class="cert-badge-pill">Workshop</span>
+            <span class="cert-view-hint">Click to view ↗</span>
+          </div>
+        </div>
+
+        <!-- Cert 3 -->
+        <div class="cert-display-card cert-nptel2" data-cert="certs/cert-os.jpeg" data-cert-title="Operating System Fundamentals" data-cert-org="NPTEL · IIT Kharagpur" role="button" tabindex="0" aria-label="View OS Fundamentals Certificate">
+          <div class="cert-ribbon">✦ NPTEL</div>
+          <div class="cert-display-icon">🖥️</div>
+          <div class="cert-display-body">
+            <span class="cert-org">NPTEL · IIT Kharagpur</span>
+            <h3>Operating System<br>Fundamentals</h3>
+            <p>Core OS concepts: process management, memory, scheduling, file systems, and concurrency.</p>
+            <div class="cert-score" style="margin-top:10px; font-weight:600; color:var(--text-dark); font-size:0.9rem;">
+              Score: <span style="color:var(--accent);">52%</span>
+            </div>
+          </div>
+          <div class="cert-display-footer">
+            <span class="cert-badge-pill">OS</span>
+            <span class="cert-badge-pill">Systems</span>
+            <span class="cert-view-hint">Click to view ↗</span>
+          </div>
+        </div>
+
+        <!-- Cert 4 -->
+        <div class="cert-display-card cert-systems" data-cert="certs/cert-arduino.jpeg" data-cert-title="Arduino Training" data-cert-org="EduPyramids · IIT Bombay" role="button" tabindex="0" aria-label="View Arduino Certificate">
+          <div class="cert-ribbon">✦ Verified</div>
+          <div class="cert-display-icon">⚡</div>
+          <div class="cert-display-body">
+            <span class="cert-org">EduPyramids · IIT Bombay</span>
+            <h3>Arduino<br>Training</h3>
+            <p>Completed Arduino training and examination remotely organized by Spoken Tutorial, IIT Bombay.</p>
+            <div class="cert-score" style="margin-top:10px; font-weight:600; color:var(--text-dark); font-size:0.9rem;">
+              Score: <span style="color:var(--accent);">92.50%</span>
+            </div>
+          </div>
+          <div class="cert-display-footer">
+            <span class="cert-badge-pill">Hardware</span>
+            <span class="cert-badge-pill">IoT</span>
+            <span class="cert-view-hint">Click to view ↗</span>
+          </div>
+        </div>
+
+        <!-- Cert 5 -->
+        <div class="cert-display-card cert-finance" data-cert="certs/cert-postgres.jpeg" data-cert-title="RDBMS PostgreSQL Training" data-cert-org="EduPyramids · IIT Bombay" role="button" tabindex="0" aria-label="View PostgreSQL Certificate">
+          <div class="cert-ribbon">✦ Verified</div>
+          <div class="cert-display-icon">🗄️</div>
+          <div class="cert-display-body">
+            <span class="cert-org">EduPyramids · IIT Bombay</span>
+            <h3>RDBMS PostgreSQL<br>Training</h3>
+            <p>Completed RDBMS PostgreSQL training and examination remotely organized by Spoken Tutorial, IIT Bombay.</p>
+            <div class="cert-score" style="margin-top:10px; font-weight:600; color:var(--text-dark); font-size:0.9rem;">
+              Score: <span style="color:var(--accent);">95.00%</span>
+            </div>
+          </div>
+          <div class="cert-display-footer">
+            <span class="cert-badge-pill">SQL</span>
+            <span class="cert-badge-pill">Databases</span>
+            <span class="cert-view-hint">Click to view ↗</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── MARKSCARDS ─── -->
+  <section id="markscards" class="section certs-section" style="background: #f9fafb; border-top: 1px solid rgba(0,0,0,0.05);">
+    <div class="container">
+      <div class="certs-header">
+        <div>
+          <p class="certs-label">Academic Results</p>
+          <h2 class="section-title-serif" style="margin-bottom: 0;">10th &amp; 12th Markscards</h2>
+        </div>
+        <p class="certs-tagline">Official scorecards from my academic journey.</p>
+      </div>
+
+      <div class="certs-showcase">
+
+        <!-- 10th Markscard -->
+        <div class="cert-display-card cert-nptel" data-cert="certs/cert-10th.jpeg" data-cert-title="10th Standard Markscard" data-cert-org="Karnataka Secondary Education Examination Board" role="button" tabindex="0" aria-label="View 10th Markscard">
+          <div class="cert-ribbon">✦ Verified</div>
+          <div class="cert-display-icon">🏫</div>
+          <div class="cert-display-body">
+            <span class="cert-org">Sri Ramanandanatha Swami High School</span>
+            <h3>10th Standard<br>Markscard</h3>
+            <p>Karnataka Secondary Education Examination Board (KSEEB). Passed with A+ grade.</p>
+            <div class="cert-score" style="margin-top:10px; font-weight:600; color:var(--text-dark); font-size:0.9rem;">
+              Score: <span style="color:var(--accent);">574/625 (91.84%)</span>
+            </div>
+          </div>
+          <div class="cert-display-footer">
+            <span class="cert-badge-pill">10th</span>
+            <span class="cert-badge-pill">Academics</span>
+            <span class="cert-view-hint">Click to view ↗</span>
+          </div>
+        </div>
+
+        <!-- 12th Markscard -->
+        <div class="cert-display-card cert-systems" data-cert="certs/cert-12th.jpeg" data-cert-title="12th Standard Markscard" data-cert-org="Karnataka School Examination and Assessment Board" role="button" tabindex="0" aria-label="View 12th Markscard">
+          <div class="cert-ribbon">✦ Verified</div>
+          <div class="cert-display-icon">🎓</div>
+          <div class="cert-display-body">
+            <span class="cert-org">BGS INDP PU College</span>
+            <h3>12th Standard<br>Markscard</h3>
+            <p>Second Year Pre-University Examination (Science - PCMB). Passed with Distinction.</p>
+            <div class="cert-score" style="margin-top:10px; font-weight:600; color:var(--text-dark); font-size:0.9rem;">
+              Score: <span style="color:var(--accent);">534/600</span>
+            </div>
+          </div>
+          <div class="cert-display-footer">
+            <span class="cert-badge-pill">12th</span>
+            <span class="cert-badge-pill">Academics</span>
+            <span class="cert-view-hint">Click to view ↗</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CERTIFICATE LIGHTBOX MODAL ─── -->
+  <div id="cert-modal" class="cert-modal" role="dialog" aria-modal="true" aria-label="Certificate viewer">
+    <div class="cert-modal-backdrop" id="cert-modal-backdrop"></div>
+    <div class="cert-modal-box">
+      <div class="cert-modal-header">
+        <div class="cert-modal-meta">
+          <span id="cert-modal-org"></span>
+          <h3 id="cert-modal-title"></h3>
+        </div>
+        <button class="cert-modal-close" id="cert-modal-close" aria-label="Close modal">✕</button>
+      </div>
+      <div class="cert-modal-body">
+        <img id="cert-modal-img" src="" alt="Certificate" />
+        <p class="cert-modal-loading" id="cert-modal-loading">Loading certificate…</p>
+      </div>
+      <div class="cert-modal-footer">
+        <a id="cert-modal-download" href="" download class="btn-download-cert">
+          ⬇ Download Certificate
+        </a>
+      </div>
+    </div>
+  </div>
 
   <script src="app.js"></script>
 </body>

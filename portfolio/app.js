@@ -67,3 +67,70 @@ const setActiveLink = () => {
 };
 window.addEventListener('scroll', setActiveLink);
 setActiveLink();
+
+// Certificate Modal Logic
+const certCards = document.querySelectorAll('.cert-display-card[data-cert]');
+const modal = document.getElementById('cert-modal');
+const modalImg = document.getElementById('cert-modal-img');
+const modalTitle = document.getElementById('cert-modal-title');
+const modalOrg = document.getElementById('cert-modal-org');
+const modalDownload = document.getElementById('cert-modal-download');
+const modalClose = document.getElementById('cert-modal-close');
+const modalBackdrop = document.getElementById('cert-modal-backdrop');
+const modalLoading = document.getElementById('cert-modal-loading');
+
+function openModal(card) {
+  const imgSrc = card.getAttribute('data-cert');
+  const title = card.getAttribute('data-cert-title');
+  const org = card.getAttribute('data-cert-org');
+
+  modalTitle.textContent = title;
+  modalOrg.textContent = org;
+  modalDownload.href = imgSrc;
+  modalImg.style.display = 'none';
+  modalLoading.style.display = 'block';
+
+  // Load image
+  const tempImg = new Image();
+  tempImg.onload = function() {
+    modalImg.src = imgSrc;
+    modalImg.style.display = 'block';
+    modalLoading.style.display = 'none';
+  };
+  tempImg.onerror = function() {
+    modalLoading.textContent = 'Failed to load certificate image. Please make sure the image exists in the "certs" folder.';
+  }
+  tempImg.src = imgSrc;
+
+  modal.classList.add('active');
+  document.body.style.overflow = 'hidden'; // Prevent scrolling
+}
+
+function closeModal() {
+  modal.classList.remove('active');
+  document.body.style.overflow = '';
+  setTimeout(() => {
+    modalImg.src = ''; // Clear image src when closed
+    modalLoading.textContent = 'Loading certificate…';
+  }, 300);
+}
+
+// Add click and keyboard events to cards
+certCards.forEach(card => {
+  card.addEventListener('click', () => openModal(card));
+  card.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      openModal(card);
+    }
+  });
+});
+
+// Close events
+if(modalClose) modalClose.addEventListener('click', closeModal);
+if(modalBackdrop) modalBackdrop.addEventListener('click', closeModal);
+window.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && modal.classList.contains('active')) {
+    closeModal();
+  }
+});
